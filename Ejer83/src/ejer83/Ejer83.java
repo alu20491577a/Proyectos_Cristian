@@ -21,6 +21,7 @@ public class Ejer83 {
     int num;
     float num1;
     float num2;
+    //Variables
     Introduccion i1 = new Introduccion();
     Ecuacion e1 = new Ecuacion();
     i1.x2();
