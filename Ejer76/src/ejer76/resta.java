@@ -15,6 +15,10 @@ private final int num1;
 private final int num2;
 private final int num3;
 
+/** Mediante este constructor podremos recibir los datos del programa principal
+     * @param num1
+     * @param num2 */
+
 public resta(int num1, int num2){
 this.num1=num1;
 this.num2=num2;
@@ -25,6 +29,9 @@ return num1;}
 
 public int getnum2(){
 return num2;}
+
+/** y mediante un return devolveremos el resultado
+     * @return devolvera el resultado  */
 
 public int getnum3(){
 return num3;}
