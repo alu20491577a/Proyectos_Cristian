@@ -9,6 +9,8 @@ package ejer76;
  *
  * @author cristian
  */
+
+/** Clase suma */
 public class suma {
     
 private final int num1;
@@ -16,8 +18,9 @@ private final int num2;
 private final int num3;
 
 /** Mediante este constructor podremos recibir los datos del programa principal
-     * @param num1
-     * @param num2 */
+     y podremos calcular la sum
+     * @param num1 (Primer numero de 
+     * @param num2*/
 
 public suma(int num1, int num2){
 this.num1=num1;
@@ -30,9 +33,6 @@ return num1;}
 
 public int getnum2(){
 return num2;}
-
-/** y mediante un return devolveremos el resultado
-     * @return devolvera el resultado  */
 
 public int getnum3(){
 return num3;}}

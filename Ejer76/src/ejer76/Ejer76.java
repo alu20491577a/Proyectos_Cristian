@@ -8,13 +8,14 @@ package ejer76;
 import java.util.Scanner;
 
 /**
- *
+ * Clase principal
  * @author cristian
  */
 public class Ejer76 {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments *
+     * parametro num servira para controlar el bucle
      */
     public static void main(String[] args) {
         // TODO code application logic here
