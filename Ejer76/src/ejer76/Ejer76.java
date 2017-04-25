@@ -8,7 +8,7 @@ package ejer76;
 import java.util.Scanner;
 
 /**
- * Clase principal
+ * Clase principal. Ejercicio de calculadora.
  * @author cristian
  */
 public class Ejer76 {
