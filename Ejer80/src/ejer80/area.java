@@ -6,7 +6,7 @@
 package ejer80;
 
 /**
- *
+ * Clase area
  * @author Cristian
  */
 public class area {
