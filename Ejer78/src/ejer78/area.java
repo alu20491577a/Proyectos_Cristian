@@ -14,6 +14,9 @@ public class area {
     private int num2;
     private float num3;
     
+    /** Mediante este constructor recibiremos los datos
+     * de la clase principal y conseguiremos el area del triangulo */
+    
 public area(int num1,int num2){
 this.num1=num1;
 this.num2=num2;

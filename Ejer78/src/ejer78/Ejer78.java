@@ -8,7 +8,7 @@ package ejer78;
 import java.util.Scanner;
 
 /**
- *
+ * Clase principal. Ejercicio del triangulo
  * @author Cristian
  */
 public class Ejer78 {
