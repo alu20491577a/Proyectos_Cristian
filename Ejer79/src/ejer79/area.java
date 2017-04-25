@@ -18,7 +18,9 @@ public class area {
     private float num5;
     
     /** Este constructor recibira los parametros de la clase principal
-     para calcular el perimetro */
+     para calcular el perimetro
+     * @param num1 lado del pentagono a calcular
+     * @return devolvera el perimetro (num2) */
     
     public int perimetro(int num1){
     this.num1=num1;
@@ -26,7 +28,10 @@ public class area {
     return num2;}
     
     /** Este constructor recibira los parametros de la clase principal
-     para calcular el apotema */
+     para calcular el apotema
+     * @param num1 lado del pentagono a calcular
+     * @param num3 radio del pentagono a calcular
+     * @return devolvera el apotema (num4)  */
     
     public float apotema(int num1,int num3){
     this.num3=num3;
@@ -34,7 +39,10 @@ public class area {
     return num4;}
 
     /** Este constructor recibira los parametros de la clase principal
-     para calcular el area */
+     para calcular el area
+     * @param num2 perimetro calculado del pentagono
+     * @param num4 apotema calculado del pentagono
+     * @return devolvera el area del pentagono (num5)  */
     
     public float area(int num2,int num4){
     num5=(num2*num4)/2;
