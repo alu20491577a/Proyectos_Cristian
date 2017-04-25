@@ -20,8 +20,7 @@ private final float num3;
  /** Mediante este constructor podremos recibir los datos del programa principal
      y podremos calcular la división
      * @param num1 primer número de la operación
-     * @param num2 segundo número de la operación
-     * la operación devolvera la división de los dos números*/
+     * @param num2 segundo número de la operación*/
 
 public division(float num1,float num2){
 this.num1=num1;

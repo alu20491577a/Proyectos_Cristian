@@ -20,8 +20,7 @@ private final int num3;
 /** Mediante este constructor podremos recibir los datos del programa principal
      y podremos calcular la multiplicación
      * @param num1 primer número de la operación
-     * @param num2 segundo número de la operación
-     * la operación devolvera la multiplicación de los dos números */
+     * @param num2 segundo número de la operación */
 
 public multi(int num1, int num2){
 this.num1=num1;
