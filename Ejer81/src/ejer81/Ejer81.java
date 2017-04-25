@@ -8,7 +8,7 @@ package ejer81;
 import java.util.Scanner;
 
 /**
- *
+ *Clase principal
  * @author Cristian
  */
 public class Ejer81 {
