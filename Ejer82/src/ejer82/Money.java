@@ -6,7 +6,7 @@
 package ejer82;
 
 /**
- *
+ *Clase Money
  * @author Cristian
  */
 public class Money {

@@ -8,7 +8,7 @@ package ejer82;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Pedir
  * @author Cristian
  */
 public class Pedir {
