@@ -34,5 +34,10 @@ return num1;}
 public int getnum2(){
 return num2;}
 
-public int getnum3(){
+    /**
+     *
+     * @return devolvera el resultado de la multiplicación
+     */
+
+    public int getnum3(){
 return num3;}}

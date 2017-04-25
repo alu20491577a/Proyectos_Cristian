@@ -20,8 +20,7 @@ private final int num3;
 /** Mediante este constructor podremos recibir los datos del programa principal
      y podremos calcular la resta
      * @param num1 primer número de la operación
-     * @param num2 segundo número de la operación
-     * la operación devolvera la resta de los dos números */
+     * @param num2 segundo número de la operación */
 
 public resta(int num1, int num2){
 this.num1=num1;
@@ -34,7 +33,11 @@ return num1;}
 public int getnum2(){
 return num2;}
 
-public int getnum3(){
+    /**
+     *
+     * @return devolvera el resultado de la resta
+     */
+    public int getnum3(){
 return num3;}
     
 }

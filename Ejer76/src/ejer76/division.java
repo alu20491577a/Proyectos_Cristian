@@ -34,6 +34,11 @@ return num1;}
 public float getnum2(){
 return num2;}
 
+    /**
+     *
+     * @return devolvera el resultado de la división
+     */
+
     public float getnum3(){
 return num3;}
     
