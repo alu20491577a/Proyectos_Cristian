@@ -17,11 +17,17 @@ public class Circunferencia {
     private final float num3;
     
     /** Mediante este constructor calcularemos el perimetro de la circunferencia
+     * @param num1 radio de la circunferencia a calcular
       */
     
     public Circunferencia(float num1){
     this.num1=num1;
     num3= (float)(num1*2*Math.PI);}
+    
+    /**
+     *
+     * @return devolvera el perimetro de la circunferencia
+     */
     
     public float getnum3(){
     return num3;}
