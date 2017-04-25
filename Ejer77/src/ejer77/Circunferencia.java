@@ -9,10 +9,15 @@ package ejer77;
  *
  * @author Cristian
  */
+
+/** Clase circunferencia */
 public class Circunferencia {
     
     private final float num1;
     private final float num3;
+    
+    /** Mediante este constructor calcularemos el perimetro de la circunferencia
+      */
     
     public Circunferencia(float num1){
     this.num1=num1;

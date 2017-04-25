@@ -8,8 +8,8 @@ package ejer77;
 import java.util.Scanner;
 
 /**
- *
- * @author Cristian
+ * Clase principal. Ejercicio de circunferencia.
+ * @author Cristian 
  */
 public class Ejer77 {
 

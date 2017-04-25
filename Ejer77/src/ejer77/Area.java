@@ -9,10 +9,15 @@ package ejer77;
  *
  * @author Cristian
  */
+
+/** Clase Area */
 public class Area {
     
     private final float num1;
     private final float num3;
+    
+    /** Mediante este constructor podremos calcular el area de la 
+     circunferencia */
     
     public Area(float num1){
     this.num1=num1;
