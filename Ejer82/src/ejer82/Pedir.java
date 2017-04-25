@@ -15,14 +15,25 @@ public class Pedir {
    
     private int num;
    
+    /**
+     * Pediremos que se introduzca una cantidad
+     */
     public void Intro(){
     Scanner teclado = new Scanner(System.in);
     System.out.println("Introduce la cantidad de dinero a ordenar: ");
     num=teclado.nextInt();}
     
+    /**
+     *
+     * @param num cantidad de dinero introducida
+     */
     public void SetNum(int num){
     this.num=num;}
     
+    /**
+     *
+     * @return devolvera la cantidad de dinero introducida
+     */
     public int GetNum(){
     return num;}
 }
