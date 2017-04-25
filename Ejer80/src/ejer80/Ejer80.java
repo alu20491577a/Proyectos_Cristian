@@ -8,7 +8,7 @@ package ejer80;
 import java.util.Scanner;
 
 /**
- *
+ * Clase principal. Ejercicio del cubo
  * @author Cristian
  */
 public class Ejer80 {

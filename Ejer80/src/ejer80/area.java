@@ -14,6 +14,11 @@ public class area {
 private int num1;
 private int num2;
 
-public int area(int num1){
+    /**
+     *
+     * @param num1 lado del cubo a calcular
+     * @return devolvera el area del cubo (num2)
+     */
+    public int area(int num1){
 num2=(int) (Math.pow(num1,2)*6);
 return num2;}}
