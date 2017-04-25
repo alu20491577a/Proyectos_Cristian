@@ -8,7 +8,7 @@ package ejer79;
 import java.util.Scanner;
 
 /**
- *
+ * Clase principal. Ejercicio del pentagono.
  * @author Cristian
  */
 public class Ejer79 {
