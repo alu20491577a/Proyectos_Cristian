@@ -18,9 +18,7 @@ private final int num2;
 private final int num3;
 
 /** Mediante este constructor podremos recibir los datos del programa principal
-     y podremos calcular la sum
-     * @param num1 (Primer numero de 
-     * @param num2*/
+     y podremos calcular la suma */
 
 public suma(int num1, int num2){
 this.num1=num1;

@@ -14,8 +14,7 @@ import java.util.Scanner;
 public class Ejer76 {
 
     /**
-     * @param args the command line arguments *
-     * parametro num servira para controlar el bucle
+     * @param args the command line arguments 
      */
     public static void main(String[] args) {
         // TODO code application logic here
