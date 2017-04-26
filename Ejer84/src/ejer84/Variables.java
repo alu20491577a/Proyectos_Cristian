@@ -8,7 +8,7 @@ package ejer84;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Variables
  * @author Cristian
  */
 public class Variables {
@@ -19,18 +19,35 @@ Scanner teclado2 = new Scanner(System.in);
 private int cateto;
 private int cateto2;
    
- public void cateto(){
+    /**
+     *Pediremos el primer cateto del triangulo
+     */
+
+    public void cateto(){
     System.out.println("Dame el primer cateto ");
     cateto=teclado.nextInt();}
     
-public void cateto2(){
+    /**
+     * Pediremos el segundo cateto del triangulo
+     */
+    
+    public void cateto2(){
     System.out.println("Dame el segundo cateto ");
     cateto2=teclado2.nextInt();}
 
-public int getcateto(){
+    /**
+     * 
+     * @return devolvera el primer cateto del triangulo
+     */
+    
+    public int getcateto(){
 return cateto;}
-
-public int getcateto2(){
+ 
+    /**
+     *
+     * @return devolvera el segundo cateto del triangulo
+     */
+    public int getcateto2(){
 return cateto2;}
 
 }

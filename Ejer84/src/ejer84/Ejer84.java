@@ -6,7 +6,7 @@
 package ejer84;
 
 /**
- *
+ * Clase principal. Teorema de pitágoras
  * @author Cristian
  */
 public class Ejer84 {
