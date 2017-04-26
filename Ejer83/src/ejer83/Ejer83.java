@@ -6,7 +6,7 @@
 package ejer83;
 
 /**
- * Clase Principal
+ * Clase Principal. Ecuación de segundo grado
  * @author Cristian
  */
 public class Ejer83 {

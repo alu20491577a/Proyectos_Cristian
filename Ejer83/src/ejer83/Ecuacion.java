@@ -6,7 +6,7 @@
 package ejer83;
 
 /**
- *
+ * Clase Ecuación
  * @author Cristian
  */
 public class Ecuacion {
