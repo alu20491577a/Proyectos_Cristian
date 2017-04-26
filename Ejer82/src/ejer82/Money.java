@@ -13,12 +13,10 @@ public class Money {
     /** 
      * Crearemos 3 arrays.
      * cocientes sera un array de 9 huecos vacio
-     * restos sera un array de 9 huecos vacio
      * divisores sera un array de 9 huecos iniciado con las valencias monetarias
      */
 private int num1;
 private int [] cocientes = new int [9];
-private int [] restos = new int [9];
 private int [] divisores = new int [] {500,200,100,50,20,10,5,2,1};
 
     /**
@@ -47,7 +45,6 @@ return num1;}
     public void Orden(int num1){
 for(int i=0; i<9; i++){
 cocientes[i]=num1/divisores[i];
-restos[i]=num1-(cocientes[i]*divisores[i]);
 num1=num1-(cocientes[i]*divisores[i]);}}
 
     /**
