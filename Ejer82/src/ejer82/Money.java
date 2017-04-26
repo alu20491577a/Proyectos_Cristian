@@ -35,13 +35,11 @@ return num1;}
     public int GetNum1(){
 return num1;}
 
-    /**
-     *
-     * @param num1 cantidad de dinero a desglosar
-     * cocientes sera igual a la cantidad por cada uno de los divisores
-     * restos sera igual a la cantidad menos los cocientes por los divisores
-     * reiniciaremos num1 para que reste la cantidad extraida
-     */
+     /** cocientes sera igual a la cantidad por cada uno de los divisores */
+     /** restos sera igual a la cantidad menos los cocientes por los divisores */
+     /** reiniciaremos num1 para que reste la cantidad extraida
+     * @param num1 cantidad de dinero a desglosar*/
+     
     public void Orden(int num1){
 for(int i=0; i<9; i++){
 cocientes[i]=num1/divisores[i];
