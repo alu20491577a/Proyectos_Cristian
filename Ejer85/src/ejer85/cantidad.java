@@ -16,13 +16,27 @@ public class cantidad {
 Scanner teclado = new Scanner (System.in);
 private int num;
 
-public void intro(){
+    /**
+     * Introduciremos la cantidad en segundos a desglosar
+     */
+
+    public void intro(){
 System.out.println("Introduce la cantidad de segundos a ordenar:");
 num=teclado.nextInt();}
 
-public void setnum(int num){
+    /**
+     *
+     * @param num es la variable que guardara la cantidad a desglosar
+     */
+    
+    public void setnum(int num){
 this.num=num;}
 
-public int getnum(){
+    /**
+     *
+     * @return devolvera la cantidad introducida anteriormente
+     */
+    
+    public int getnum(){
 return num;}
         }

@@ -6,7 +6,7 @@
 package ejer85;
 
 /**
- *
+ * Clase Principal. Desglosar tiempo
  * @author Cristian
  */
 public class Ejer85 {
