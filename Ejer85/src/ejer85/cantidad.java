@@ -8,7 +8,7 @@ package ejer85;
 import java.util.Scanner;
 
 /**
- *
+ * Clase cantidad
  * @author Cristian
  */
 public class cantidad {

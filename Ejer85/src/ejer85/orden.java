@@ -20,7 +20,6 @@ public class orden {
     
 private double num1;    
 private int [] cocientes = new int [5];
-private int [] restos = new int [5];
 private int [] divisores = new int [] {604800,86400,3600,60,1};
 private String [] unidades = new String [] {"semanas","dias","horas","minutos","segundos"};
 
@@ -45,15 +44,11 @@ return num1;}
     /**
      *
      * @param num1 es la variable en segundos a desglosar
-     * cocientes sera igual a la cantidad por cada uno de los divisores
-     * restos sera igual a la cantidad menos los cocientes por los divisores
-     * reiniciaremos num1 para que reste la cantidad extraida
      */
 
     public void order(int num1){
 for (int i=0; i<5; i++){
 cocientes[i]=num1/divisores[i];
-restos[i]=num1-(cocientes[i]*divisores[i]);
 num1=num1-(cocientes[i]*divisores[i]);}}
 
     /**
