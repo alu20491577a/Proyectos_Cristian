@@ -6,7 +6,7 @@
 package ejer83;
 
 /**
- *
+ * Clase Principal
  * @author Cristian
  */
 public class Ejer83 {
@@ -30,7 +30,7 @@ public class Ejer83 {
     x=i1.GetX();
     i1.num();
     num1=i1.Raiz();
-    if(num1>0){
+    if(num1>=0){
     num1=(float) Math.sqrt(num1);
     num2=e1.Setraiz(num1);
     // Los dos valores siguientes
@@ -41,7 +41,9 @@ public class Ejer83 {
     x2=e1.SetX2(x2);
     System.out.println("Los resultados son los siguientes;");
     System.out.println("El resultado negativo es:" + e1.SetRes1());
-    System.out.println("El resultado negativo es:" + e1.SetRes2());}
+    System.out.println("El resultado positivo es:" + e1.SetRes2());}
+    // En caso de que el número del interior de la raíz sea negativo,
+    // el programa nos avisara de ello y no procedera a completar la ecuación
     else{System.out.println(num1);
         System.out.println("La raiz de un número negativo es una imposibilidad"
             + " matemática.");}}
