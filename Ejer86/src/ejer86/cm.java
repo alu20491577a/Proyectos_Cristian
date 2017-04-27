@@ -8,7 +8,7 @@ package ejer86;
 import java.util.Scanner;
 
 /**
- *
+ * Clase cm
  * @author Cristian
  */
 public class cm {
@@ -19,27 +19,54 @@ Scanner teclado2 = new Scanner(System.in);
 private String opcion;
 private float num1;
 
-public void intro(){
+    /**
+     * Introducción de unidades
+     */
+
+    public void intro(){
 System.out.println("");
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pulgadas, pies o yardas");
 System.out.println("o escriba salir si quiere volver al primer menu");
 opcion=teclado.nextLine();}
 
-public void setint(String opcion){
+    /**
+     *
+     * @param opcion variable para escoger a que unidad transformar
+     */
+    
+    public void setint(String opcion){
 this.opcion=opcion;}
 
-public String getStr(){
+    /**
+     *
+     * @return devolvera la variable introducida anteriormente
+     */
+    
+    public String getStr(){
 return opcion;}
 
-public void setnum(){
-System.out.println("Introduzca la cantidad de pies");
+    /**
+     * Introduciremos la cantidad a desglosar
+     */
+    
+    public void setnum(){
+System.out.println("Introduzca la cantidad de cm");
 num1=teclado2.nextInt();}
 
-public int getnum(int num1){
+    /**
+     *
+     * @param num1 cantidad a desglosar
+     * @return devolvera la cantidad introducida
+     */
+    public int getnum(int num1){
 return num1;}
 
-public void ejec(){
+    /**
+     *Menu para las conversiones de unidades
+     */
+    
+    public void ejec(){
     int num = 0;
     while (num==0){
         intro();

@@ -8,7 +8,7 @@ package ejer86;
 import java.util.Scanner;
 
 /**
- *
+ *Clase yardas
  * @author Cristian
  */
 public class yardas {
@@ -19,26 +19,48 @@ Scanner teclado2 = new Scanner(System.in);
 private String opcion;
 private float num1;
 
-public void intro(){
+    /**
+     * Inicio de la clase
+     */
+    public void intro(){
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pulgadas, cm o pies");
 System.out.println("o escriba salir si quiere volver al primer menu");
 opcion=teclado.nextLine();}
 
-public void setint(String opcion){
+    /**
+     *
+     * @param opcion valor de la medida a la que deseamos transformar
+     */
+    public void setint(String opcion){
 this.opcion=opcion;}
 
-public String getStr(){
+    /**
+     *
+     * @return devolvera el valor introducido anteriormente
+     */
+    public String getStr(){
 return opcion;}
 
-public void setnum(){
-System.out.println("Introduzca la cantidad de pies");
+    /**
+     * Pediremos la cantidad a transformar
+     */
+    public void setnum(){
+System.out.println("Introduzca la cantidad de yardas");
 num1=teclado2.nextInt();}
 
-public int getnum(int num1){
+    /**
+     *
+     * @param num1 valor que le daremos para transformar
+     * @return devolvera el valor introducido anteriormente
+     */
+    public int getnum(int num1){
 return num1;}
 
-public void ejec(){
+    /**
+     * Menu principal de la clase
+     */
+    public void ejec(){
     int num = 0;
     while (num==0){
         intro();

@@ -6,7 +6,7 @@
 package ejer86;
 
 /**
- *
+ * Clase Principal. Conversor de longitudes
  * @author Cristian
  */
 public class Ejer86 {

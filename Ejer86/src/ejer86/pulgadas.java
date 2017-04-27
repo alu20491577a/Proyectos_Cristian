@@ -8,7 +8,7 @@ package ejer86;
 import java.util.Scanner;
 
 /**
- *
+ * Clase pulgadas
  * @author Cristian
  */
 public class pulgadas {
@@ -19,26 +19,48 @@ Scanner teclado2 = new Scanner(System.in);
 private String opcion;
 private float num1;
 
-public void intro(){
+    /**
+     *Inicio de la clase introduciremos la unidad a la que transformar
+     */
+    public void intro(){
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pies, cm o yardas");
 System.out.println("o escriba salir si quiere volver al primer menu");
 opcion=teclado.nextLine();}
 
-public void setint(String opcion){
+    /**
+     *
+     * @param opcion valor que le daremos a la opción presentada anteriormente
+     */
+    public void setint(String opcion){
 this.opcion=opcion;}
 
-public String getStr(){
+    /**
+     *
+     * @return devolvera el valor anteriormente introducido
+     */
+    public String getStr(){
 return opcion;}
 
-public void setnum(){
-System.out.println("Introduzca la cantidad de pies");
+    /**
+     * Introducción del valor númerico a transformar
+     */
+    public void setnum(){
+System.out.println("Introduzca la cantidad de pulgadas");
 num1=teclado2.nextInt();}
 
-public int getnum(int num1){
+    /**
+     *
+     * @param num1 valor númerico introducido anteriormente
+     * @return devolvera el valor númerico introducido
+     */
+    public int getnum(int num1){
 return num1;}
 
-public void ejec(){
+    /**
+     * Menu principal de la clase
+     */
+    public void ejec(){
     int num = 0;
     while (num==0){
         intro();
@@ -59,3 +81,5 @@ switch(opcion){
     break;}}}
 
 }    
+
+    

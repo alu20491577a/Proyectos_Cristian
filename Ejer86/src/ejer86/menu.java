@@ -8,7 +8,7 @@ package ejer86;
 import java.util.Scanner;
 
 /**
- *
+ * Clase menu. Inicio del programa
  * @author Cristian
  */
 public class menu {
@@ -17,14 +17,25 @@ Scanner teclado = new Scanner(System.in);
 
 private String opcion;
 
-public void intro(){
+    /**
+     * Pediremos en primer lugar la unidad con la que escoger
+     */
+    public void intro(){
 System.out.println("Introduzca la unidad de medida en la que quiere trabajar "
         + "pies, pulgadas, cm o yardas");
 System.out.println("Introduzca salir si quiere salir del programa");
 opcion=teclado.nextLine();}
 
-public void setint(String opcion){
+    /**
+     *
+     * @param opcion parametro que le pasaremos anteriormente 
+     */
+    public void setint(String opcion){
 this.opcion=opcion;}
 
-public String getStr(){
+    /**
+     *
+     * @return devolvera el parametro que le introduzcamos
+     */
+    public String getStr(){
 return opcion;}}
