@@ -13,10 +13,7 @@ import java.util.Scanner;
  */
 public class Introduccion {
 
-    Scanner teclado = new Scanner(System.in);
-    Scanner teclado2 = new Scanner(System.in);
-    Scanner teclado3 = new Scanner(System.in);
-    
+  
 private int x2;
 private int x;
 private int num;
@@ -25,14 +22,17 @@ private float raiz;
 /** Se pediran las 3 variables de la ecuación */
 
     public void x2(){
+   Scanner teclado = new Scanner(System.in);
     System.out.println("Dame a (x2) ");
     x2=teclado.nextInt();}
     
     public void x(){
+    Scanner teclado2 = new Scanner(System.in);
     System.out.println("Dame b (x) ");
     x=teclado2.nextInt();}
     
     public void num(){
+    Scanner teclado3 = new Scanner(System.in);
     System.out.println("Dame c (numero) ");
     num=teclado3.nextInt();}
     
