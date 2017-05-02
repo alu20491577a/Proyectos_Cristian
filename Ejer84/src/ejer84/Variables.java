@@ -12,10 +12,7 @@ import java.util.Scanner;
  * @author Cristian
  */
 public class Variables {
-  
-Scanner teclado = new Scanner(System.in);
-Scanner teclado2 = new Scanner(System.in);
-    
+
 private int cateto;
 private int cateto2;
    
@@ -23,7 +20,7 @@ private int cateto2;
      *Pediremos el primer cateto del triangulo
      */
 
-    public void cateto(){
+    public void cateto(){Scanner teclado = new Scanner(System.in);
     System.out.println("Dame el primer cateto ");
     cateto=teclado.nextInt();}
     
@@ -31,7 +28,7 @@ private int cateto2;
      * Pediremos el segundo cateto del triangulo
      */
     
-    public void cateto2(){
+    public void cateto2(){Scanner teclado2 = new Scanner(System.in);
     System.out.println("Dame el segundo cateto ");
     cateto2=teclado2.nextInt();}
 
