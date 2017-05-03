@@ -13,14 +13,14 @@ import java.util.Scanner;
  */
 public class cantidad {
 
-Scanner teclado = new Scanner (System.in);
+
 private int num;
 
     /**
      * Introduciremos la cantidad en segundos a desglosar
      */
 
-    public void intro(){
+    public void intro(){Scanner teclado = new Scanner (System.in);
 System.out.println("Introduce la cantidad de segundos a ordenar:");
 num=teclado.nextInt();}
 
