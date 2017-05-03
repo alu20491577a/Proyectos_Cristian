@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 public class cm {
     
-Scanner teclado = new Scanner(System.in);
-Scanner teclado2 = new Scanner(System.in); 
+
+
 
 private String opcion;
 private float num1;
@@ -23,7 +23,7 @@ private float num1;
      * Introducción de unidades
      */
 
-    public void intro(){
+    public void intro(){Scanner teclado = new Scanner(System.in);
 System.out.println("");
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pulgadas, pies o yardas");
@@ -50,7 +50,7 @@ return opcion;}
      * Introduciremos la cantidad a desglosar
      */
     
-    public void setnum(){
+    public void setnum(){Scanner teclado2 = new Scanner(System.in); 
 System.out.println("Introduzca la cantidad de cm");
 num1=teclado2.nextInt();}
 

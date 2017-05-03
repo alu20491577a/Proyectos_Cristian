@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 public class yardas {
 
-Scanner teclado = new Scanner(System.in);
-Scanner teclado2 = new Scanner(System.in); 
+
+
 
 private String opcion;
 private float num1;
@@ -22,7 +22,7 @@ private float num1;
     /**
      * Inicio de la clase
      */
-    public void intro(){
+    public void intro(){Scanner teclado = new Scanner(System.in);
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pulgadas, cm o pies");
 System.out.println("o escriba salir si quiere volver al primer menu");
@@ -45,7 +45,7 @@ return opcion;}
     /**
      * Pediremos la cantidad a transformar
      */
-    public void setnum(){
+    public void setnum(){Scanner teclado2 = new Scanner(System.in);
 System.out.println("Introduzca la cantidad de yardas");
 num1=teclado2.nextInt();}
 

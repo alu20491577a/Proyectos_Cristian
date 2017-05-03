@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 public class pie {
 
-Scanner teclado = new Scanner(System.in);
-Scanner teclado2 = new Scanner(System.in);
+
+
 
 private String opcion;
 private float num1;
@@ -22,7 +22,7 @@ private float num1;
     /**
      * Introduciremos la medida a la que transformar las unidades
      */
-    public void intro(){
+    public void intro(){Scanner teclado = new Scanner(System.in);
 System.out.println("Introduzca la unidad de medida a la que transformar "
         + "pulgadas, cm o yardas");
 System.out.println("o escriba salir si quiere volver al primer menu");
@@ -45,7 +45,7 @@ return opcion;}
     /**
      * Introduciremos la cantidad que queremos transformar
      */
-    public void setnum(){
+    public void setnum(){Scanner teclado2 = new Scanner(System.in);
 System.out.println("Introduzca la cantidad de pies");
 num1=teclado2.nextInt();}
 

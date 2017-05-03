@@ -13,14 +13,14 @@ import java.util.Scanner;
  */
 public class menu {
     
-Scanner teclado = new Scanner(System.in);
+
 
 private String opcion;
 
     /**
      * Pediremos en primer lugar la unidad con la que escoger
      */
-    public void intro(){
+    public void intro(){Scanner teclado = new Scanner(System.in);
 System.out.println("Introduzca la unidad de medida en la que quiere trabajar "
         + "pies, pulgadas, cm o yardas");
 System.out.println("Introduzca salir si quiere salir del programa");
