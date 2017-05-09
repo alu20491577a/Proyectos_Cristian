@@ -35,7 +35,6 @@ public class Ejer87 {
     c2.ncset("2");
     c3.setsaldoandint(5000);
     c3.ncset("3");
-    m1.acc(c1,c2,c3);
     m1.intro();
     m1.operacion(c1,c2,c3);}
     

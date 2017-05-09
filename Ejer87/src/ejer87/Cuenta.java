@@ -172,7 +172,7 @@ return numero_cuenta;}
 System.out.println("Introduzca la cantidad de dinero a introducir");
 num=teclado.nextInt();
 saldo=saldo+num;
-System.out.println("La cantidad de " + num + "ha sido ingresada en su cuenta.");
+System.out.println("La cantidad de " + num + "€ ha sido ingresada en su cuenta.");
 System.out.println("Su saldo actual es " + saldo + "€");}
 
     /**
@@ -183,7 +183,7 @@ System.out.println("Su saldo actual es " + saldo + "€");}
 System.out.println("Introduzca la cantidad de dinero a retirar");
 num=teclado.nextInt();
 saldo=saldo-num;
-System.out.println("La cantidad de " + num + "ha sido retirada de su cuenta.");
+System.out.println("La cantidad de " + num + "€ ha sido retirada de su cuenta.");
 System.out.println("Su saldo actual es " + saldo + "€");}
 
     /**
