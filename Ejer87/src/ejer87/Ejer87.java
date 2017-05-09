@@ -8,7 +8,7 @@ package ejer87;
 import java.util.Scanner;
 
 /**
- *
+ * Clase principal. Ejercicio del banco
  * @author Cristian
  */
 public class Ejer87 {

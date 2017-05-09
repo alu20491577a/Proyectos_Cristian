@@ -15,20 +15,22 @@ public class Menu {
     
     private String opción;
             
+    /**
+     *Introduciremos la cuenta con la que deseamos hacer operaciones
+     */
     public void intro(){Scanner teclado = new Scanner(System.in);
     System.out.println("Introduzca el numero de la cuenta con la que desea"
             + " hacer operaciones (1 2 o 3)");
     opción=teclado.nextLine();}
-    
-    public void setm(String opción){
-    opción=this.opción;}
-    
-    public String getm(){
-    return opción;}
-    
-    public void acc(Cuenta c1, Cuenta c2, Cuenta c3){
-    }
-    
+     
+    /**
+     * Este sera el constructor principal del menu donde haremos todas las
+     * operaciones, le introduciremos las 3 cuentas desde la clase principal,
+     * introduciremos asi todas las variables que hemos puesto en la clase principal
+     * @param c1 primera cuenta del banco
+     * @param c2 segunda cuenta del banco
+     * @param c3 tercera cuenta del banco
+     */
     public void operacion(Cuenta c1, Cuenta c2, Cuenta c3){
         int num=0;
         int num2;
