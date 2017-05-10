@@ -24,7 +24,6 @@ public class Ejer87 {
     int num2;
     int num3;
     int num4;
-    String num_cuenta;
     Menu m1=new Menu();
     System.out.println("Cree las cuentas deseadas para el programa");
     Cuenta c1=new Cuenta();
