@@ -12,12 +12,7 @@ import java.util.Scanner;
  * @author Cristian
  */
 public class Cuenta {
-    Scanner teclado = new Scanner(System.in);
-    Scanner teclado2 = new Scanner(System.in);
-    Scanner teclado3 = new Scanner(System.in);
-    Scanner teclado4 = new Scanner(System.in);
-    Scanner teclado5 = new Scanner(System.in);
-    Scanner teclado6 = new Scanner(System.in);
+
     private int num;
     private String name;
     private String apellido;
@@ -26,6 +21,7 @@ public class Cuenta {
     private int saldo;
     private double interes;
     private String numero_cuenta;
+    Scanner teclado = new Scanner(System.in);
     
     /**
      * Este es un constructor vacio.
@@ -38,7 +34,13 @@ public class Cuenta {
      * Este constructor se utilizara para rellenar los datos de la cuenta 2
      */
     
+    
     public void registro(){
+    Scanner teclado2 = new Scanner(System.in);
+    Scanner teclado3 = new Scanner(System.in);
+    Scanner teclado4 = new Scanner(System.in);
+    Scanner teclado5 = new Scanner(System.in);
+    Scanner teclado6 = new Scanner(System.in);
 System.out.println("Introduzca los siguientes datos para la creación de su"
         + " nueva cuenta.");
 System.out.println();
