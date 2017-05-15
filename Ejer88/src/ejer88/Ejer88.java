@@ -36,11 +36,5 @@ public class Ejer88 {
     System.out.println(Cuenta.get(i));}
     
     Scanner teclado = new Scanner(System.in);
-
-    
-    
     }
-    
-    
-    
 }
