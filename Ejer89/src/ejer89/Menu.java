@@ -8,7 +8,7 @@ package ejer89;
 import java.util.Scanner;
 
 /**
- *
+ *Clase menu
  * @author Cristian
  */
 public class Menu {
@@ -18,10 +18,15 @@ int num2=0;
 int num3;
 int num4=0;
 int n;
+int a;
 Contador c1 = new Contador();
 
-public void menu(){
-    c1.inicio();
+    /**
+     * Menu en el que se ejecutaran todas las operaciones necesarias 
+     * para asegurar el correcto funcionamiento del programa.
+     */
+    public void menu(){
+    c1.iniciar();
 while (num2==0){
     num4=0;
 System.out.println("elige el contador que quieres usar "
@@ -31,12 +36,14 @@ Scanner teclado2 = new Scanner(System.in);
 num=teclado.nextInt();
     switch(num){
         case 1:
-            n=c1.getcontador();
-            System.out.println(n);
+            if(n==0){n=c1.getcontador();}
+            else{n=c1.copy(a);}
+            System.out.println("Numero del contador:" + n);
             while(num4==0){
             System.out.println("Elige si quieres incrementar o disminuir el número del contador "
                     + "(1) Incrementar ,(2) Disminuir, (3) Salir");
             num3=teclado2.nextInt();
+            a=n;
 switch (num3) {
     case 1:n=c1.incrementar(n);
             System.out.println("numero actual del contador " + n);
@@ -52,12 +59,14 @@ switch (num3) {
 }
             break;
         case 2:
-            n=c1.getcontador2();
-            System.out.println(n);
+            if(n==0){n=c1.getcontador2();}
+            else{n=c1.copy(a);}
+            System.out.println("Numero del contador:" + n);
             while(num4==0){
             System.out.println("Elige si quieres incrementar o disminuir el número del contador "
                     + "(1) Incrementar ,(2) Disminuir, (3) Salir");
             num3=teclado2.nextInt();
+            a=n;
 switch (num3) {
     case 1:n=c1.incrementar(n);
         System.out.println("numero actual del contador " + n);

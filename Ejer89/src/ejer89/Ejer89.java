@@ -6,7 +6,7 @@
 package ejer89;
 
 /**
- *
+ * Clase principal
  * @author Cristian
  */
 public class Ejer89 {
@@ -18,7 +18,6 @@ public class Ejer89 {
         // TODO code application logic here
     Contador c1 =  new Contador();
     Menu m1 = new Menu();
-    c1.iniciar();
     m1.menu();}
     
 }
