@@ -8,7 +8,7 @@ package ejer90;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Menu
  * @author Cristian
  */
 public class Menu {
@@ -16,7 +16,12 @@ public class Menu {
     private int opción;
             
     /**
-     *Introduciremos la cuenta con la que deseamos hacer operaciones
+     *Introduciremos el libro con el que deseemos hacer operaciones
+     * @param l1 libro 1 de la biblioteca
+     * @param l2 libro 2 de la biblioteca
+     * @param l3 libro 3 de la biblioteca
+     * @param l4 libro 4 de la biblioteca
+     * @param l5 libro 5 de la biblioteca
      */
     public void intro(libro l1, libro l2, libro l3, libro l4, libro l5){
         Scanner teclado = new Scanner(System.in);
@@ -45,7 +50,16 @@ public class Menu {
     else{System.out.println();
         System.out.println("La opción que has escogido no es valida");}}}
     
-      public void operacion(libro l1, libro l2, libro l3, libro l4, libro l5){
+    /**
+     * Constructor que utilizaremos para hacer las operaciones principales 
+     * en nuestra biblioteca
+     * @param l1 libro 1 de la biblioteca
+     * @param l2 libro 2 de la biblioteca
+     * @param l3 libro 3 de la biblioteca
+     * @param l4 libro 4 de la biblioteca
+     * @param l5 libro 5 de la biblioteca
+     */
+    public void operacion(libro l1, libro l2, libro l3, libro l4, libro l5){
         int num=0;
         int num2;
     while(num==0){
