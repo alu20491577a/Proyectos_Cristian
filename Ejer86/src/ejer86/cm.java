@@ -13,9 +13,6 @@ import java.util.Scanner;
  */
 public class cm {
     
-
-
-
 private String opcion;
 private float num1;
 
