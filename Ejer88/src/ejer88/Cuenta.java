@@ -5,6 +5,7 @@
  */
 package ejer88;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -22,19 +23,15 @@ public class Cuenta {
     private double interes;
     private String numero_cuenta;
     Scanner teclado = new Scanner(System.in);
+    private ArrayList<Cuenta> Account;
     
     /**
      * Este es un constructor vacio.
      */
     
     public Cuenta(){
-}
+    this.Account=new ArrayList<>();}
 
-    public Cuenta(String name, String apellido, String apellido2, String DNI,int saldo, 
-            int interes, String numero_cuenta) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     /**
      * Este constructor se utilizara para rellenar los datos de la cuenta 2
      */
@@ -62,7 +59,8 @@ saldo=teclado6.nextInt();
 if (saldo<5000){interes=2.5;}
 else if(saldo>5000){interes=5;}
 else if(saldo<20000){interes=7.5;}
-else{interes=10;}}    
+else{interes=10;}
+this.Account=new ArrayList<>();}    
 
     /**
      * Usaremos este parametro para asignar automaticamente un numero de cuenta
