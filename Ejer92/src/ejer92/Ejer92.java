@@ -6,7 +6,7 @@
 package ejer92;
 
 /**
- *
+ * Clase principal
  * @author Cristian
  */
 public class Ejer92 {

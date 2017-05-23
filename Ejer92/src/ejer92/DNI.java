@@ -8,7 +8,7 @@ package ejer92;
 import java.util.Scanner;
 
 /**
- *
+ * Clase DNI
  * @author Cristian
  */
 public class DNI {
@@ -19,19 +19,35 @@ public class DNI {
     private String letra;
     /* Introducimos variables */
    
+    /**
+     * Introduciremos la parte numérica del DNI para poder usarla en calculos
+     */
     public void DNI(){
     Scanner teclado = new Scanner (System.in);
     System.out.println("Introduce la parte numerica de tu DNI");
     DNI = teclado.nextInt();
     resto = DNI%23;}
     
+    /**
+     * Devolvera el valor de la variable DNI
+     * @return devolvera DNI
+     */
     public int getDNI(){
     return DNI;}
 
+    /**
+     * Igualara letra a la letra que le introduzcamos cuando usemos el constructor
+     * @param letra Letra que tendra el DNI
+     */
+    
     public void letra(String letra){
     this.letra=letra;
-    System.out.println("La letra de su DNI es: " + letra);}
+    System.out.println("Tu DNI completo es: " + DNI + letra);}
     
+    /**
+     * Metodo principal para obtener la letra del DNI a partir de la parte
+     * numérica
+     */
     public void calculo(){
     if (DNI > 99999999){System.out.println("Error");}
     else{switch (resto){
