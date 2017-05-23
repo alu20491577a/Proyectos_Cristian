@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Calendar;
 
 /**
- *
+ * Clase Menu
  * @author Cristian
  */
 public class Menu {

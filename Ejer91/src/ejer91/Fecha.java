@@ -8,7 +8,7 @@ package ejer91;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Fecha
  * @author Cristian
  */
 public class Fecha {
