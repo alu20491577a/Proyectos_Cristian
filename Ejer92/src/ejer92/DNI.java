@@ -13,11 +13,9 @@ import java.util.Scanner;
  */
 public class DNI {
     
-/* Declaramos variables */
     private int DNI;
     private int resto;
     private String letra;
-    /* Introducimos variables */
    
     /**
      * Introduciremos la parte numérica del DNI para poder usarla en calculos
