@@ -26,7 +26,10 @@ public class Menu {
 
 Fecha f1=new Fecha();
 
-public void Menu(){
+    /**
+     * Menu principal en el que mostraremos los menus y daremos las opciones
+     */
+    public void Menu(){
     f1.intro();
     Scanner teclado3 = new Scanner(System.in);
 while(num2==0){

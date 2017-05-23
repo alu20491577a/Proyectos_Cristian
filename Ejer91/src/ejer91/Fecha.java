@@ -13,7 +13,10 @@ import java.util.Scanner;
  */
 public class Fecha {
     
-public void fecha(){
+    /**
+     * Clase vacia
+     */
+    public void fecha(){
 
 }
     private int dia;
@@ -26,7 +29,10 @@ public void fecha(){
     private int num2=0;
     private int num3=0;
     
-public void intro(){
+    /**
+     * Clase principal donde introduciremos la fecha que queramos
+     */
+    public void intro(){
 System.out.println("Introduce el dia");
 while(num==0){Scanner teclado = new Scanner(System.in);
 dia=teclado.nextInt();
@@ -50,16 +56,31 @@ else {if(resto2==0){bisiesto=false;}
 else{bisiesto=true;}}
 num=0;num2=0;}
 
-
-public int getdia(){
+    /**
+     * Clase que devolvera el valor del dia
+     * @return devolvera dia
+     */
+    public int getdia(){
 return dia;}
 
-public int getmes(){
+    /**
+     * Ckase que devolvera el valor del mes
+     * @return devolvera mes
+     */
+    public int getmes(){
 return mes;}
 
-public int getaño(){
+    /**
+     * Clase que devolvera el valor del año
+     * @return devolvera año
+     */
+    public int getaño(){
 return año;}
 
-public boolean getbisiesto(){
+    /**
+     * Clase que devolvera el valor del boolean bisiesto
+     * @return devolvera true or false dependiendo de la operación
+     */
+    public boolean getbisiesto(){
 return bisiesto;}
 }

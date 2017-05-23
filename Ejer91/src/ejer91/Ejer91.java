@@ -6,7 +6,7 @@
 package ejer91;
 
 /**
- *
+ * Clase principal
  * @author Cristian
  */
 public class Ejer91 {
@@ -18,6 +18,4 @@ public class Ejer91 {
         // TODO code application logic here);
     Menu m1 = new Menu();
     m1.Menu();}
-    
-    
 }
