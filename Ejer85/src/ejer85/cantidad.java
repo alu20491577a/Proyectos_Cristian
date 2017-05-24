@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Clase cantidad
  * @author Cristian
  */
-public class cantidad {
+public class cantidad{
 
 
 private int num;
