@@ -24,5 +24,4 @@ public class Ejer80 {
     num1=teclado.nextInt();
     area a1 = new area();
     System.out.println("El area total del cubo es " + a1.area(num1) + " cm3");}
-    
 }
