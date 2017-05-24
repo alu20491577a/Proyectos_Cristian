@@ -14,7 +14,7 @@ public class Ejer92 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
     DNI d1 = new DNI();
     d1.DNI();
