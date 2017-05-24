@@ -14,7 +14,7 @@ public class Ejer83 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
     int x2;
     int x;
