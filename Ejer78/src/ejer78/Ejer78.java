@@ -16,7 +16,7 @@ public class Ejer78 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
         Scanner teclado2 = new Scanner(System.in);
