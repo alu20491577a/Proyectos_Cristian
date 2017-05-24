@@ -14,7 +14,7 @@ public class Ejer90 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // TODO code application logic here
     libro l1 = new libro();
     libro l2 = new libro();
