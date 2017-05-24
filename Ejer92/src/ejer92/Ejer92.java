@@ -19,5 +19,4 @@ public class Ejer92 {
     DNI d1 = new DNI();
     d1.DNI();
     d1.calculo();}
-    
 }
