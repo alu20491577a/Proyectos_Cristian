@@ -31,6 +31,7 @@ public class Menu {
      * @param c1 primera cuenta del banco
      * @param c2 segunda cuenta del banco
      * @param c3 tercera cuenta del banco
+     * @param Banco Arraylist en el que estaran todas las cuentas del banco
      */
     public void operacion(Cuenta c1, Cuenta c2, Cuenta c3, ArrayList<Cuenta> Banco){
         int num=0;
@@ -76,19 +77,19 @@ public class Menu {
             break;}
             break;
         case 2:switch(opción){
-            case "1":c1.reintegro();
+            case "1":Banco.get(0).reintegro();
             break;
-            case "2":c2.reintegro();
+            case "2":Banco.get(1).reintegro();
             break;
-            case "3":c3.reintegro();
+            case "3":Banco.get(2).reintegro();
             break;}
             break;
         case 3:switch(opción){
-            case "1":c1.ingreso();
+            case "1":Banco.get(0).ingreso();
             break;
-            case "2":c2.ingreso();
+            case "2":Banco.get(1).ingreso();
             break;
-            case "3":c3.ingreso();
+            case "3":Banco.get(2).ingreso();
             break;}
             break;
         case 4:Scanner teclado2=new Scanner(System.in);
@@ -97,9 +98,9 @@ public class Menu {
                     + "escoge 2 si deseas la cuenta 2 o 3 si deseas la cuenta 3");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "2":c1.transferencia(c1,c2,Banco);
+                    case "2":Banco.get(0).transferencia(c1,c2,Banco);
                     break;
-                    case "3":c1.transferencia(c1,c3,Banco);
+                    case "3":Banco.get(0).transferencia(c1,c3,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}
@@ -108,9 +109,9 @@ public class Menu {
                     + "escoge 1 si deseas la cuenta 1 o 3 si deseas la cuenta 3");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "1":c2.transferencia(c2,c1,Banco);
+                    case "1":Banco.get(1).transferencia(c2,c1,Banco);
                     break;
-                    case "3":c2.transferencia(c2,c3,Banco);
+                    case "3":Banco.get(1).transferencia(c2,c3,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}
@@ -119,9 +120,9 @@ public class Menu {
                     + "escoge 1 si deseas la cuenta 1 o 2 si deseas la cuenta 2");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "1":c3.transferencia(c3,c1,Banco);
+                    case "1":Banco.get(2).transferencia(c3,c1,Banco);
                     break;
-                    case "2":c3.transferencia(c3,c2,Banco);
+                    case "2":Banco.get(2).transferencia(c3,c2,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}}
