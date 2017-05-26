@@ -32,7 +32,7 @@ public class Menu {
      * @param c2 segunda cuenta del banco
      * @param c3 tercera cuenta del banco
      */
-    public void operacion(Cuenta c1, Cuenta c2, Cuenta c3){
+    public void operacion(Cuenta c1, Cuenta c2, Cuenta c3, ArrayList<Cuenta> Banco){
         int num=0;
         int num2;
     while(num==0){
@@ -48,31 +48,31 @@ public class Menu {
         case 1:
             switch (opción){
         case "1":
-            System.out.println("Nombre:" + c1.getname());
-            System.out.println("Primer apellido:" + c1.getapellido());
-            System.out.println("Segundo apellido:" + c1.getapellido2());
-            System.out.println("DNI:" + c1.getDNI());
-            System.out.println("Saldo:" + c1.getsaldo() + "€");
-            System.out.println("Tipo de interes:" + c1.getint() + " %");
-            System.out.println("Numero de cuenta:" + c1.getnc());
+            System.out.println("Nombre:" + Banco.get(0).getname());
+            System.out.println("Primer apellido:" + Banco.get(0).getapellido());
+            System.out.println("Segundo apellido:" + Banco.get(0).getapellido2());
+            System.out.println("DNI:" + Banco.get(0).getDNI());
+            System.out.println("Saldo:" + Banco.get(0).getsaldo() + "€");
+            System.out.println("Tipo de interes:" + Banco.get(0).getint() + " %");
+            System.out.println("Numero de cuenta:" + Banco.get(0).getnc());
             break;
         case "2":
-            System.out.println("Nombre:" + c2.getname());
-            System.out.println("Primer apellido:" + c2.getapellido());
-            System.out.println("Segundo apellido:" + c2.getapellido2());
-            System.out.println("DNI:" + c2.getDNI());
-            System.out.println("Saldo:" + c2.getsaldo() + "€");
-            System.out.println("Tipo de interes:" + c2.getint() + " %");
-            System.out.println("Numero de cuenta:" + c2.getnc());
+            System.out.println("Nombre:" + Banco.get(1).getname());
+            System.out.println("Primer apellido:" + Banco.get(1).getapellido());
+            System.out.println("Segundo apellido:" + Banco.get(1).getapellido2());
+            System.out.println("DNI:" + Banco.get(1).getDNI());
+            System.out.println("Saldo:" + Banco.get(1).getsaldo() + "€");
+            System.out.println("Tipo de interes:" + Banco.get(1).getint() + " %");
+            System.out.println("Numero de cuenta:" + Banco.get(1).getnc());;
             break;
         case "3":
-            System.out.println("Nombre:" + c3.getname());
-            System.out.println("Primer apellido:" + c3.getapellido());
-            System.out.println("Segundo apellido:" + c3.getapellido2());
-            System.out.println("DNI:" + c3.getDNI());
-            System.out.println("Saldo:" + c3.getsaldo() + "€");
-            System.out.println("Tipo de interes:" + c3.getint() + "%");
-            System.out.println("Numero de cuenta:" + c3.getnc());
+            System.out.println("Nombre:" + Banco.get(2).getname());
+            System.out.println("Primer apellido:" + Banco.get(2).getapellido());
+            System.out.println("Segundo apellido:" + Banco.get(2).getapellido2());
+            System.out.println("DNI:" + Banco.get(2).getDNI());
+            System.out.println("Saldo:" + Banco.get(2).getsaldo() + "€");
+            System.out.println("Tipo de interes:" + Banco.get(2).getint() + " %");
+            System.out.println("Numero de cuenta:" + Banco.get(2).getnc());
             break;}
             break;
         case 2:switch(opción){
@@ -97,9 +97,9 @@ public class Menu {
                     + "escoge 2 si deseas la cuenta 2 o 3 si deseas la cuenta 3");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "2":c1.transferencia(c1,c2);
+                    case "2":c1.transferencia(c1,c2,Banco);
                     break;
-                    case "3":c1.transferencia(c1,c3);
+                    case "3":c1.transferencia(c1,c3,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}
@@ -108,9 +108,9 @@ public class Menu {
                     + "escoge 1 si deseas la cuenta 1 o 3 si deseas la cuenta 3");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "1":c2.transferencia(c2,c1);
+                    case "1":c2.transferencia(c2,c1,Banco);
                     break;
-                    case "3":c2.transferencia(c2,c3);
+                    case "3":c2.transferencia(c2,c3,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}
@@ -119,9 +119,9 @@ public class Menu {
                     + "escoge 1 si deseas la cuenta 1 o 2 si deseas la cuenta 2");
                 opcion2=teclado2.next();
                 switch(opcion2){
-                    case "1":c3.transferencia(c3,c1);
+                    case "1":c3.transferencia(c3,c1,Banco);
                     break;
-                    case "2":c3.transferencia(c3,c2);
+                    case "2":c3.transferencia(c3,c2,Banco);
                     break;
                     default:System.out.println("Error, cuenta no existente");
                     break;}}

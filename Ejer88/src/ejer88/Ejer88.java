@@ -18,17 +18,16 @@ public class Ejer88 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    ArrayList<Cuenta> Banco;
+    ArrayList<Cuenta> Banco = new ArrayList(3);
     Menu m1=new Menu();
-    Banco = new ArrayList();
-    Cuenta cuenta1 = new Cuenta();
-    cuenta1.cset("Manuel","Gómez","Rodríguez","03902930A",2500,"1");
-    Cuenta cuenta2 = new Cuenta();
-    cuenta2.registro();
-    cuenta2.ncset("2");
+    Cuenta cuenta1 = new Cuenta("Manuel","Gómez","Rodríguez","03902930A",2500,"1");
+    Banco.add(cuenta1);
+    Cuenta cuenta2 = new Cuenta("Laura","Lopez","Vives","96583214B",7500,"2");
+    Banco.add(cuenta2);
     Cuenta cuenta3 = new Cuenta(cuenta1);
     cuenta3.setsaldoandint(5000);
     cuenta3.ncset("3");
+    Banco.add(cuenta3);
     m1.intro();
-    m1.operacion(cuenta1,cuenta2,cuenta3);
+    m1.operacion(cuenta1,cuenta2,cuenta3,Banco);
 }}

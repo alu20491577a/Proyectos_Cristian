@@ -24,12 +24,14 @@ public class Cuenta {
     private String numero_cuenta;
     Scanner teclado = new Scanner(System.in);
     private ArrayList<Cuenta> Account;
+
+    
     
     /**
      * Este es un constructor vacio.
      */
     
-    public Cuenta(){
+    public void cuenta(){
     this.Account=new ArrayList<>();}
 
     /**
@@ -80,7 +82,7 @@ this.numero_cuenta=numero_cuenta;}
      * @param numero_cuenta variable del numero de la cuenta actual
      */
     
-    public void cset(String name, String apellido, String apellido2, String DNI,
+    Cuenta(String name, String apellido, String apellido2, String DNI,
         int saldo, String numero_cuenta){
 this.name=name;
 this.apellido=apellido;
@@ -195,14 +197,15 @@ System.out.println("Su saldo actual es " + saldo + "€");}
      *Este constructor sera utilizado para transferir dinero de una cuenta a otra
      * @param c1 primera cuenta, de la que se extraera el dinero
      * @param c2 segunda cuenta, en la que se ingresara el dinero
+     * @param Banco Arraylist en el que tenemos los datos de las cuentas
      */
-    public void transferencia(Cuenta c1, Cuenta c2){
+    public void transferencia(Cuenta c1, Cuenta c2,ArrayList Banco){
 System.out.println("Introduzca la cantidad de dinero a transferir");
 num=teclado.nextInt();
 c1.saldo=c1.saldo-num;
 c2.saldo=c2.saldo+num;
 System.out.println("La cantidad de " + num + " ha sido retirada de la cuenta " + c1.numero_cuenta);
-System.out.println("Su saldo actual es " + c1.saldo + "€");
+System.out.println("Su saldo actual es " + saldo + "€");
 System.out.println("La cantidad de " + num + " ha sido transferida a la cuenta " + c2.numero_cuenta);
-System.out.println("Su saldo actual es " + c2.saldo + "€");}
+System.out.println("Su saldo actual es " + saldo + "€");}
 }
