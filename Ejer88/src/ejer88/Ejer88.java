@@ -8,7 +8,7 @@ package ejer88;
 import java.util.ArrayList;
 
 /**
- *
+ * Clase principal
  * @author Cristian
  */
 public class Ejer88 {

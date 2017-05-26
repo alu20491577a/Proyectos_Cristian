@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * Clase Menu
  * @author Cristian
  */
 public class Menu {
